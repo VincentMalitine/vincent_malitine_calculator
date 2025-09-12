@@ -1,0 +1,88 @@
+﻿<Window x:Class="vincent_malitine_calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:vincent_malitine_calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="300">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- *********************** Design  ************************************-->
+        <Grid.Resources>
+            
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Background" Value="#1D1D1D"/>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="Foreground" Value="#00F6ED"/>
+                <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+                <Style.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Style.Resources>
+            </Style>
+            <Style x:Key="BlackandBlue" TargetType="{x:Type Control}">
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Background" Value="#00F6ED"/>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+                <Style.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Style.Resources>
+            </Style>
+        </Grid.Resources>
+        <!-- *********************** End design  ************************************-->
+        
+        <!-- *********************** Fourth Row ************************************-->
+        <TextBox Grid.Row="0" Grid.ColumnSpan="4" Name="Fourth_Display"/>
+        <Button Grid.Row="1" Grid.Column="0" Name="BTN7" Content="7" />
+        <Button Grid.Row="1" Grid.Column="1" Name="BTN8" Content="8" />
+        <Button Grid.Row="1" Grid.Column="2" Name="BTN9" Content="9" />
+        <Button Grid.Row="1" Grid.Column="3" Name="BTN_plus" Style="{StaticResource BlackandBlue}" Content="+" />
+        <!-- *********************** End Fourth Row ************************************-->
+        
+        <!-- *********************** Third Row ************************************-->
+        <TextBox Grid.Row="0" Grid.ColumnSpan="4" Name="Third_Display"/>
+        <Button Grid.Row="2" Grid.Column="0" Name="BTN4" Content="4" />
+        <Button Grid.Row="2" Grid.Column="1" Name="BTN5" Content="5" />
+        <Button Grid.Row="2" Grid.Column="2" Name="BTN6" Content="6" />
+        <Button Grid.Row="2" Grid.Column="3" Name="BTN_moins" Style="{StaticResource BlackandBlue}" Content="-" />
+        <!-- *********************** End Third Row ************************************-->
+        
+        <!-- *********************** Second Row ************************************-->
+        <TextBox Grid.Row="0" Grid.ColumnSpan="4" Name="Second_Display"/>
+        <Button Grid.Row="3" Grid.Column="0" Name="BTN1" Content="1" />
+        <Button Grid.Row="3" Grid.Column="1" Name="BTN2" Content="2" />
+        <Button Grid.Row="3" Grid.Column="2" Name="BTN3" Content="3" />
+        <Button Grid.Row="3" Grid.Column="3" Name="BTN_fois" Style="{StaticResource BlackandBlue}" Content="*" />
+        <!-- *********************** End Second Row ************************************-->
+        
+        <!-- *********************** First Row ************************************-->
+        <TextBox Grid.Row="0" Grid.ColumnSpan="4" Name="First_Display"/>
+        <Button Grid.Row="4" Grid.Column="1" Name="BTN_clear" Style="{StaticResource BlackandBlue}" Content="DEL"/>
+        <Button Grid.Row="4" Grid.Column="2" Name="BTN_egal" Style="{StaticResource BlackandBlue}" Content="=" />
+        <Button Grid.Row="4" Grid.Column="3" Name="BTN_division" Style="{StaticResource BlackandBlue}" Content="/" />
+        <Button Grid.Row="4" Grid.Column="0" Name="BTN0" Content="0" />
+        <!-- *********************** End First Row ************************************-->
+        
+    </Grid>
+</Window>
