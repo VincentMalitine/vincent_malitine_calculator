@@ -78,22 +78,64 @@ namespace vincent_malitine_calculator
 
         private void BTN_plus_Click(object sender, RoutedEventArgs e)
         {
-            TB_Display.Text += "+";
+            numb1 = int.Parse(TB_Display.Text);
+            operation = '+';
+            TB_Display.Text ="";
         }
 
         private void BTN_moins_Click(object sender, RoutedEventArgs e)
         {
-            TB_Display.Text += "-";
+            numb1 = int.Parse(TB_Display.Text);
+            operation = '-';
+            TB_Display.Text = "";
         }
 
         private void BTN_fois_Click(object sender, RoutedEventArgs e)
         {
-            TB_Display.Text += "*";
+            numb1 = int.Parse(TB_Display.Text);
+            operation = '*';
+            TB_Display.Text = "";
         }
 
         private void BTN_division_Click(object sender, RoutedEventArgs e)
         {
-            TB_Display.Text += "/";
+            numb1 = int.Parse(TB_Display.Text);
+            operation = '/';
+            TB_Display.Text = "";
+        }
+
+        private void BTN_egal_Click(object sender, RoutedEventArgs e)
+        {
+
+            numb2 = int.Parse(TB_Display.Text);
+        
+            switch (operation)
+            {
+                case '+':
+                    result = numb1 + numb2;
+                    TB_Display.Text = result.ToString();
+                    break;
+                case '-':
+                    result = numb1 - numb2;
+                    TB_Display.Text = result.ToString();
+                    break;
+                case '*':
+                    result = numb1 * numb2;
+                    TB_Display.Text = result.ToString();
+                    break;
+                case '/':
+                    result = numb1 / numb2;
+                    TB_Display.Text = result.ToString();
+                    break;
+                default:
+                    break;
+            }
+
+        }
+
+        private void BTN_clear_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text = "";
         }
     }
 }
