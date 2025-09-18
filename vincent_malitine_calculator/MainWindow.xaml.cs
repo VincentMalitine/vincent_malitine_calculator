@@ -20,5 +20,80 @@ namespace vincent_malitine_calculator
         {
             InitializeComponent();
         }
+
+        int numb1;
+        int numb2;
+        int result;
+        char operation;
+
+        private void BTN0_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text += "0";
+        }
+
+        private void BTN1_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text += "1";
+        }
+
+        private void BTN2_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text += "2";
+        }
+
+        private void BTN3_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text += "3";
+        }
+
+        private void BTN4_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text += "4";
+        }
+
+        private void BTN5_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text += "5";
+        }
+
+        private void BTN6_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text += "6";
+        }
+
+        private void BTN7_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text += "7";
+        }
+
+        private void BTN8_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text += "8";
+        }
+
+        private void BTN9_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text += "9";
+        }
+
+        private void BTN_plus_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text += "+";
+        }
+
+        private void BTN_moins_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text += "-";
+        }
+
+        private void BTN_fois_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text += "*";
+        }
+
+        private void BTN_division_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text += "/";
+        }
     }
 }

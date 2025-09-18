@@ -25,7 +25,7 @@
 
         <!-- *********************** Design  ************************************-->
         <Grid.Resources>
-            
+
             <Style TargetType="{x:Type Button}">
                 <Setter Property="Margin" Value="10"/>
                 <Setter Property="Background" Value="#1D1D1D"/>
@@ -51,38 +51,36 @@
             </Style>
         </Grid.Resources>
         <!-- *********************** End design  ************************************-->
-        
+
         <!-- *********************** Fourth Row ************************************-->
-        <TextBox Grid.Row="0" Grid.ColumnSpan="4" Name="Fourth_Display"/>
-        <Button Grid.Row="1" Grid.Column="0" Name="BTN7" Content="7" />
-        <Button Grid.Row="1" Grid.Column="1" Name="BTN8" Content="8" />
-        <Button Grid.Row="1" Grid.Column="2" Name="BTN9" Content="9" />
-        <Button Grid.Row="1" Grid.Column="3" Name="BTN_plus" Style="{StaticResource BlackandBlue}" Content="+" />
+        <TextBox Grid.Row="0" Grid.ColumnSpan="4" Name="TB_Display"/>
+        <Button Grid.Row="1" Grid.Column="0" Name="BTN7" Content="7" Click="BTN7_Click" />
+        <Button Grid.Row="1" Grid.Column="1" Name="BTN8" Content="8" Click="BTN8_Click" />
+        <Button Grid.Row="1" Grid.Column="2" Name="BTN9" Content="9" Click="BTN9_Click" />
+        <Button Grid.Row="1" Grid.Column="3" Name="BTN_plus" Style="{StaticResource BlackandBlue}" Content="+" Click="BTN_plus_Click" />
         <!-- *********************** End Fourth Row ************************************-->
-        
+
         <!-- *********************** Third Row ************************************-->
-        <TextBox Grid.Row="0" Grid.ColumnSpan="4" Name="Third_Display"/>
-        <Button Grid.Row="2" Grid.Column="0" Name="BTN4" Content="4" />
-        <Button Grid.Row="2" Grid.Column="1" Name="BTN5" Content="5" />
-        <Button Grid.Row="2" Grid.Column="2" Name="BTN6" Content="6" />
-        <Button Grid.Row="2" Grid.Column="3" Name="BTN_moins" Style="{StaticResource BlackandBlue}" Content="-" />
+        <Button Grid.Row="2" Grid.Column="0" Name="BTN4" Content="4" Click="BTN4_Click" />
+        <Button Grid.Row="2" Grid.Column="1" Name="BTN5" Content="5" Click="BTN5_Click" />
+        <Button Grid.Row="2" Grid.Column="2" Name="BTN6" Content="6" Click="BTN6_Click" />
+        <Button Grid.Row="2" Grid.Column="3" Name="BTN_moins" Style="{StaticResource BlackandBlue}" Content="-" Click="BTN_moins_Click" />
         <!-- *********************** End Third Row ************************************-->
-        
+
         <!-- *********************** Second Row ************************************-->
-        <TextBox Grid.Row="0" Grid.ColumnSpan="4" Name="Second_Display"/>
-        <Button Grid.Row="3" Grid.Column="0" Name="BTN1" Content="1" />
-        <Button Grid.Row="3" Grid.Column="1" Name="BTN2" Content="2" />
-        <Button Grid.Row="3" Grid.Column="2" Name="BTN3" Content="3" />
-        <Button Grid.Row="3" Grid.Column="3" Name="BTN_fois" Style="{StaticResource BlackandBlue}" Content="*" />
+        <Button Grid.Row="3" Grid.Column="0" Name="BTN1" Content="1" Click="BTN1_Click" />
+        <Button Grid.Row="3" Grid.Column="1" Name="BTN2" Content="2" Click="BTN2_Click" />
+        <Button Grid.Row="3" Grid.Column="2" Name="BTN3" Content="3" Click="BTN3_Click" />
+        <Button Grid.Row="3" Grid.Column="3" Name="BTN_fois" Style="{StaticResource BlackandBlue}" Content="*" Click="BTN_fois_Click" />
         <!-- *********************** End Second Row ************************************-->
-        
+
         <!-- *********************** First Row ************************************-->
-        <TextBox Grid.Row="0" Grid.ColumnSpan="4" Name="First_Display"/>
-        <Button Grid.Row="4" Grid.Column="1" Name="BTN_clear" Style="{StaticResource BlackandBlue}" Content="DEL"/>
+        <Button Grid.Row="4" Grid.Column="1" Name="BTN_clear" Style="{StaticResource BlackandBlue}" Content="DEL" Click="BTN_clear_Click"/>
         <Button Grid.Row="4" Grid.Column="2" Name="BTN_egal" Style="{StaticResource BlackandBlue}" Content="=" />
-        <Button Grid.Row="4" Grid.Column="3" Name="BTN_division" Style="{StaticResource BlackandBlue}" Content="/" />
-        <Button Grid.Row="4" Grid.Column="0" Name="BTN0" Content="0" />
+        <Button Grid.Row="4" Grid.Column="3" Name="BTN_division" Style="{StaticResource BlackandBlue}" Content="/" Click="BTN_division_Click" />
+        <Button Grid.Row="4" Grid.Column="0" Name="BTN0" Content="0" Click="BTN0_Click" />
         <!-- *********************** End First Row ************************************-->
-        
+
     </Grid>
+
 </Window>
