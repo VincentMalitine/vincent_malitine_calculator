@@ -28,9 +28,8 @@
 
             <Style TargetType="{x:Type Button}">
                 <Setter Property="Margin" Value="10"/>
-                <Setter Property="Background" Value="#1D1D1D"/>
+                <Setter Property="Background" Value="#D1FAFF"/>
                 <Setter Property="FontSize" Value="25"/>
-                <Setter Property="Foreground" Value="#00F6ED"/>
                 <Setter Property="TextBlock.TextAlignment" Value="Center"/>
                 <Style.Resources>
                     <Style TargetType="Border">
