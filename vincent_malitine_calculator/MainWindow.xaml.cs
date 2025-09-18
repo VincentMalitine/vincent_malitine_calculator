@@ -21,9 +21,9 @@ namespace vincent_malitine_calculator
             InitializeComponent();
         }
 
-        int numb1;
-        int numb2;
-        int result;
+        float numb1;
+        float numb2;
+        float result;
         char operation;
 
         private void BTN0_Click(object sender, RoutedEventArgs e)
