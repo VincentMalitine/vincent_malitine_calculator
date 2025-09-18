@@ -78,28 +78,28 @@ namespace vincent_malitine_calculator
 
         private void BTN_plus_Click(object sender, RoutedEventArgs e)
         {
-            numb1 = int.Parse(TB_Display.Text);
+            numb1 = float.Parse(TB_Display.Text);
             operation = '+';
             TB_Display.Text ="";
         }
 
         private void BTN_moins_Click(object sender, RoutedEventArgs e)
         {
-            numb1 = int.Parse(TB_Display.Text);
+            numb1 = float.Parse(TB_Display.Text);
             operation = '-';
             TB_Display.Text = "";
         }
 
         private void BTN_fois_Click(object sender, RoutedEventArgs e)
         {
-            numb1 = int.Parse(TB_Display.Text);
+            numb1 = float.Parse(TB_Display.Text);
             operation = '*';
             TB_Display.Text = "";
         }
 
         private void BTN_division_Click(object sender, RoutedEventArgs e)
         {
-            numb1 = int.Parse(TB_Display.Text);
+            numb1 = float.Parse(TB_Display.Text);
             operation = '/';
             TB_Display.Text = "";
         }
@@ -107,7 +107,7 @@ namespace vincent_malitine_calculator
         private void BTN_egal_Click(object sender, RoutedEventArgs e)
         {
 
-            numb2 = int.Parse(TB_Display.Text);
+            numb2 = float.Parse(TB_Display.Text);
         
             switch (operation)
             {
@@ -136,6 +136,11 @@ namespace vincent_malitine_calculator
         private void BTN_clear_Click(object sender, RoutedEventArgs e)
         {
             TB_Display.Text = "";
+        }
+
+        private void BTN_virg_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text += ",";
         }
     }
 }

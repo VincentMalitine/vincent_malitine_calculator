@@ -5,18 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:vincent_malitine_calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="300">
+        Title="Frozen Calculator" Height="450" Width="400">
     <Grid>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -52,7 +53,7 @@
         <!-- *********************** End design  ************************************-->
 
         <!-- *********************** Fourth Row ************************************-->
-        <TextBox Grid.Row="0" Grid.ColumnSpan="4" Name="TB_Display"/>
+        <TextBox Grid.Row="0" Grid.ColumnSpan="5" Name="TB_Display" IsReadOnly="True"/>
         <Button Grid.Row="1" Grid.Column="0" Name="BTN7" Content="7" Click="BTN7_Click" />
         <Button Grid.Row="1" Grid.Column="1" Name="BTN8" Content="8" Click="BTN8_Click" />
         <Button Grid.Row="1" Grid.Column="2" Name="BTN9" Content="9" Click="BTN9_Click" />
@@ -70,7 +71,8 @@
         <Button Grid.Row="3" Grid.Column="0" Name="BTN1" Content="1" Click="BTN1_Click" />
         <Button Grid.Row="3" Grid.Column="1" Name="BTN2" Content="2" Click="BTN2_Click" />
         <Button Grid.Row="3" Grid.Column="2" Name="BTN3" Content="3" Click="BTN3_Click" />
-        <Button Grid.Row="3" Grid.Column="3" Name="BTN_fois" Style="{StaticResource BlackandBlue}" Content="*" Click="BTN_fois_Click" />
+        <Button Grid.Row="3" Grid.Column="3" Name="BTN_fois" Style="{StaticResource BlackandBlue}" Content="x" Click="BTN_fois_Click" />
+        <Button Grid.Row="3" Grid.Column="4" Name="BTN_virg" Style="{StaticResource BlackandBlue}" Content="," Click="BTN_virg_Click" />
         <!-- *********************** End Second Row ************************************-->
 
         <!-- *********************** First Row ************************************-->
