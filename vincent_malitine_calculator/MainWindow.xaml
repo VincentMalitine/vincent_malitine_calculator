@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:vincent_malitine_calculator"
         mc:Ignorable="d"
-        Title="Frozen Calculator" Height="450" Width="400">
+        Title="Calculator" Height="450" Width="400">
     <Grid>
 
         <Grid.ColumnDefinitions>
