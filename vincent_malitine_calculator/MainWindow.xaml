@@ -54,7 +54,16 @@
         <!-- *********************** End design  ************************************-->
 
         <!-- *********************** Fourth Row ************************************-->
-        <TextBox Grid.Row="0" Grid.ColumnSpan="5" Name="TB_Display" IsReadOnly="True" Background="#CAD8DE"/>
+        <TextBox Grid.Row="0" Grid.ColumnSpan="5" Name="TB_Display"
+                 IsReadOnly="True"
+                 Background="#CAD8DE"
+                 FontSize="40"
+                 FontWeight="Bold"
+                 BorderThickness="0"
+                 HorizontalContentAlignment="Right"
+                 VerticalContentAlignment="Center"
+                 Padding="10,0,10,0"
+                 />
         <Button Grid.Row="1" Grid.Column="0" Name="BTN7" Content="7" Click="BTN7_Click" />
         <Button Grid.Row="1" Grid.Column="1" Name="BTN8" Content="8" Click="BTN8_Click" />
         <Button Grid.Row="1" Grid.Column="2" Name="BTN9" Content="9" Click="BTN9_Click" />
