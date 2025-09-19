@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -25,6 +26,16 @@ namespace vincent_malitine_calculator
         float numb2;
         float result;
         char operation;
+
+        private float puissance(float baseNum, float exp)
+        {
+            float res = 1;
+            for (int i = 0; i < exp; i++)
+            {
+                res *= baseNum;
+            }
+            return res;
+        }
 
         private void BTN0_Click(object sender, RoutedEventArgs e)
         {
@@ -104,6 +115,13 @@ namespace vincent_malitine_calculator
             TB_Display.Text = "";
         }
 
+        private void BTN_puissance_Click(object sender, RoutedEventArgs e)
+        {
+            numb1 = float.Parse(TB_Display.Text);
+            operation = '^';
+            TB_Display.Text = "";
+        }
+
         private void BTN_egal_Click(object sender, RoutedEventArgs e)
         {
 
@@ -127,10 +145,15 @@ namespace vincent_malitine_calculator
                     result = numb1 / numb2;
                     TB_Display.Text = result.ToString();
                     break;
+                case '^':
+                    result = puissance(numb1, numb2);
+                    TB_Display.Text = result.ToString();
+                    break;
                 default:
                     break;
             }
-
+            
+            operation = ' ';
         }
 
         private void BTN_clear_Click(object sender, RoutedEventArgs e)
@@ -140,7 +163,10 @@ namespace vincent_malitine_calculator
 
         private void BTN_virg_Click(object sender, RoutedEventArgs e)
         {
-            TB_Display.Text += ",";
+            if (!TB_Display.Text.Contains(","))
+            {
+                TB_Display.Text += ",";
+            }
         }
     }
 }
