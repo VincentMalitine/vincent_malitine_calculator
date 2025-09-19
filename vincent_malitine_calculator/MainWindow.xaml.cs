@@ -169,5 +169,11 @@ namespace vincent_malitine_calculator
                 TB_Display.Text += ",";
             }
         }
+
+        private void BTN_pi_Click(object sender, RoutedEventArgs e)
+        {
+            PlayButtonSound();
+            TB_Display.Text += Math.PI.ToString("G8"); // Affiche π avec une précision raisonnable
+        }
     }
 }

@@ -71,6 +71,7 @@
         <Button Grid.Row="1" Grid.Column="1" Name="BTN8" Content="8" Click="BTN8_Click" />
         <Button Grid.Row="1" Grid.Column="2" Name="BTN9" Content="9" Click="BTN9_Click" />
         <Button Grid.Row="1" Grid.Column="3" Name="BTN_plus" Style="{StaticResource BlackandBlue}" Content="+" Click="BTN_plus_Click" />
+        <Button Grid.Row="1" Grid.Column="4" Name="BTN_pi" Style="{StaticResource BlackandBlue}" Content="π" Click="BTN_pi_Click" />
         <!-- *********************** End Fourth Row ************************************-->
 
         <!-- *********************** Third Row ************************************-->
