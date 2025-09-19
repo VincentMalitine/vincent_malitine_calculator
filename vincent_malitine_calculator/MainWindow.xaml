@@ -78,10 +78,10 @@
 
         <!-- *********************** First Row ************************************-->
         <Button Grid.Row="4" Grid.Column="4" Name="BTN_clear" Background="Red" Foreground="White" Content="DEL" Click="BTN_clear_Click" />
-        <Button Grid.Row="4" Grid.Column="1" Name="BTN_virg" Style="{StaticResource BlackandBlue}" Content="," Click="BTN_virg_Click" />
+        <Button Grid.Row="4" Grid.Column="0" Name="BTN_virg" Style="{StaticResource BlackandBlue}" Content="," Click="BTN_virg_Click" />
         <Button Grid.Row="4" Grid.Column="2" Name="BTN_egal" Style="{StaticResource BlackandBlue}" Content="=" Click="BTN_egal_Click" />
         <Button Grid.Row="4" Grid.Column="3" Name="BTN_division" Style="{StaticResource BlackandBlue}" Content="/" Click="BTN_division_Click" />
-        <Button Grid.Row="4" Grid.Column="0" Name="BTN0" Content="0" Click="BTN0_Click" />
+        <Button Grid.Row="4" Grid.Column="1" Name="BTN0" Content="0" Click="BTN0_Click" />
         <!-- *********************** End First Row ************************************-->
 
     </Grid>
