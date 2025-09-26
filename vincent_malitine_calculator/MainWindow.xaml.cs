@@ -26,7 +26,7 @@ namespace vincent_malitine_calculator
         float result;
         char operation;
 
-        private float puissance(float baseNum, float exp)
+        private float puissance(float baseNum, float exp) // fonction permettant de calculer un nombre avec un exposant entier positif
         {
             float res = 1;
             for (int i = 0; i < exp; i++)
@@ -86,42 +86,42 @@ namespace vincent_malitine_calculator
             TB_Display.Text += "9";
         }
 
-        private void BTN_plus_Click(object sender, RoutedEventArgs e)
+        private void BTN_plus_Click(object sender, RoutedEventArgs e) // action permettant de calculer une addition
         {
             numb1 = float.Parse(TB_Display.Text);
             operation = '+';
             TB_Display.Text ="";
         }
 
-        private void BTN_moins_Click(object sender, RoutedEventArgs e)
+        private void BTN_moins_Click(object sender, RoutedEventArgs e) // action permettant de calculer une soustraction
         {
             numb1 = float.Parse(TB_Display.Text);
             operation = '-';
             TB_Display.Text = "";
         }
 
-        private void BTN_fois_Click(object sender, RoutedEventArgs e)
+        private void BTN_fois_Click(object sender, RoutedEventArgs e) // action permettant de calculer une multiplication
         {
             numb1 = float.Parse(TB_Display.Text);
             operation = '*';
             TB_Display.Text = "";
         }
 
-        private void BTN_division_Click(object sender, RoutedEventArgs e)
+        private void BTN_division_Click(object sender, RoutedEventArgs e) // action permettant de calculer une division
         {
             numb1 = float.Parse(TB_Display.Text);
             operation = '/';
             TB_Display.Text = "";
         }
 
-        private void BTN_puissance_Click(object sender, RoutedEventArgs e)
+        private void BTN_puissance_Click(object sender, RoutedEventArgs e) // action permettant de calculer une puissance (avec un exposant entier positif)
         {
             numb1 = float.Parse(TB_Display.Text);
             operation = '^';
             TB_Display.Text = "";
         }
 
-        private void BTN_egal_Click(object sender, RoutedEventArgs e)
+        private void BTN_egal_Click(object sender, RoutedEventArgs e) // action permettant d'afficher le résultat du calcul
         {
 
             numb2 = float.Parse(TB_Display.Text);
@@ -155,12 +155,12 @@ namespace vincent_malitine_calculator
             operation = ' ';
         }
 
-        private void BTN_clear_Click(object sender, RoutedEventArgs e)
+        private void BTN_clear_Click(object sender, RoutedEventArgs e) // action permettant de reset l'écran de la calculatrice
         {
             TB_Display.Text = "";
         }
 
-        private void BTN_virg_Click(object sender, RoutedEventArgs e)
+        private void BTN_virg_Click(object sender, RoutedEventArgs e) // action permettant d'ajouter une virgule dans le nombre en cours de saisie (si il n'y en a pas déjà une)
         {
             if (!TB_Display.Text.Contains(","))
             {
@@ -168,12 +168,12 @@ namespace vincent_malitine_calculator
             }
         }
 
-        private void BTN_pi_Click(object sender, RoutedEventArgs e)
+        private void BTN_pi_Click(object sender, RoutedEventArgs e) // action permettant d'ajouter la valeur de pi dans le nombre en cours de saisie
         {
             TB_Display.Text += Math.PI.ToString("G8");
         }
 
-        private void BTN_del_Click(object sender, RoutedEventArgs e)
+        private void BTN_del_Click(object sender, RoutedEventArgs e) // action permettant de supprimer le dernier caractère du nombre en cours de saisie
         {
             if (TB_Display.Text.Length > 0)
             {
@@ -181,7 +181,7 @@ namespace vincent_malitine_calculator
             }
         }
 
-        private void BTN_percent_Click(object sender, RoutedEventArgs e)
+        private void BTN_percent_Click(object sender, RoutedEventArgs e) // action permettant de convertir le nombre en cours de saisie en pourcentage
         {
             if (!string.IsNullOrEmpty(TB_Display.Text))
             {
@@ -195,7 +195,7 @@ namespace vincent_malitine_calculator
             }
         }
 
-        private void BTN_Rac2_Click(object sender, RoutedEventArgs e)
+        private void BTN_Rac2_Click(object sender, RoutedEventArgs e) // action permettant de calculer la racine carrée du nombre en cours de saisie
         {
             if (!string.IsNullOrEmpty(TB_Display.Text))
             {
