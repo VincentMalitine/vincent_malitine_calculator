@@ -15,6 +15,10 @@ Ce choix de conception est lié à une volonté de faire une interface plutôt n
 Le but est de ne pas trop fatiguer les yeux lors d'une utilisation prolongée.
 
 Cette calculatrice ne supporte malheureusement pas les opérations avec parenthèses et ne peux calculer qu'un seul opérateur à la fois.
+
+Du a l'absence d'opérations a plus d'un opérateur, aucune systèm de priorité des opérations n'a été implémenté, jugé inutile dans ce contexte.
+
 Le code est commenté de manière assez légére et simple pour une meilleure compréhension sans être trop verbeux.
+
 
 ce code a été réalisé par Vincent Malitine dans le cadre d'un projet scolaire.
