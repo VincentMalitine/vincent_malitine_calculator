@@ -13,9 +13,7 @@ using System.Media;
 
 namespace vincent_malitine_calculator
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -172,7 +170,7 @@ namespace vincent_malitine_calculator
 
         private void BTN_pi_Click(object sender, RoutedEventArgs e)
         {
-            TB_Display.Text += Math.PI.ToString("G8"); // Affiche π avec une précision raisonnable
+            TB_Display.Text += Math.PI.ToString("G8");
         }
 
         private void BTN_del_Click(object sender, RoutedEventArgs e)
@@ -180,6 +178,38 @@ namespace vincent_malitine_calculator
             if (TB_Display.Text.Length > 0)
             {
                 TB_Display.Text = TB_Display.Text.Substring(0, TB_Display.Text.Length - 1);
+            }
+        }
+
+        private void BTN_percent_Click(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(TB_Display.Text))
+            {
+                float value;
+                string text = TB_Display.Text.Replace(',', '.');
+                if (float.TryParse(text, out value))
+                {
+                    value = value / 100;
+                    TB_Display.Text = value.ToString().Replace('.', ',');
+                }
+            }
+        }
+
+        private void BTN_Rac2_Click(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(TB_Display.Text))
+            {
+                float value;
+                string text = TB_Display.Text.Replace(',', '.');
+                if (float.TryParse(text, out value) && value >= 0)
+                {
+                    value = (float)Math.Sqrt(value);
+                    TB_Display.Text = value.ToString().Replace('.', ',');
+                }
+                else
+                {
+                    TB_Display.Text = "Erreur";
+                }
             }
         }
     }

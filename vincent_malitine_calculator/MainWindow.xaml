@@ -14,6 +14,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -54,7 +55,7 @@
         <!-- *********************** End design  ************************************-->
         
         <!--*********************** Screen ************************************-->
-        <TextBox Grid.Row="0" Grid.ColumnSpan="5" Name="TB_Display"
+        <TextBox Grid.Row="0" Grid.ColumnSpan="6" Name="TB_Display"
          IsReadOnly="True"
          Background="#CAD8DE"
          FontSize="40"
@@ -72,6 +73,7 @@
         <Button Grid.Row="1" Grid.Column="2" Name="BTN9" Content="9" Click="BTN9_Click" />
         <Button Grid.Row="1" Grid.Column="3" Name="BTN_plus" Style="{StaticResource BlackandBlue}" Content="+" Click="BTN_plus_Click" />
         <Button Grid.Row="1" Grid.Column="4" Name="BTN_pi" Style="{StaticResource BlackandBlue}" Content="π" Click="BTN_pi_Click" />
+        <Button Grid.Row="1" Grid.Column="5" Name="BTN_percent" Style="{StaticResource BlackandBlue}" Content="%" Click="BTN_percent_Click" />
         <!-- *********************** End Fourth Row ************************************-->
 
         <!-- *********************** Third Row ************************************-->
@@ -80,6 +82,7 @@
         <Button Grid.Row="2" Grid.Column="2" Name="BTN6" Content="6" Click="BTN6_Click" />
         <Button Grid.Row="2" Grid.Column="3" Name="BTN_moins" Style="{StaticResource BlackandBlue}" Content="-" Click="BTN_moins_Click" />
         <Button Grid.Row="2" Grid.Column="4" Name="BTN_puissance" Style="{StaticResource BlackandBlue}" Content="^" Click="BTN_puissance_Click" />
+        <Button Grid.Row="2" Grid.Column="5" Name="BTN_Rac2" Style="{StaticResource BlackandBlue}" Content="√" Click="BTN_Rac2_Click" />
         <!-- *********************** End Third Row ************************************-->
 
         <!-- *********************** Second Row ************************************-->
@@ -87,11 +90,11 @@
         <Button Grid.Row="3" Grid.Column="1" Name="BTN2" Content="2" Click="BTN2_Click" />
         <Button Grid.Row="3" Grid.Column="2" Name="BTN3" Content="3" Click="BTN3_Click" />
         <Button Grid.Row="3" Grid.Column="3" Name="BTN_fois" Style="{StaticResource BlackandBlue}" Content="x" Click="BTN_fois_Click" />
-        <Button Grid.Row="3" Grid.Column="4" Name="BTN_del" Background="Red" Foreground="White" Content="DELETE" Click="BTN_del_Click" FontSize="17"/>
+        <Button Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="6" Name="BTN_del" Background="Red" Foreground="White" Content="DELETE" Click="BTN_del_Click" FontSize="17"/>
         <!-- *********************** End Second Row ************************************-->
 
         <!-- *********************** First Row ************************************-->
-        <Button Grid.Row="4" Grid.Column="4" Name="BTN_clear" Background="Red" Foreground="White" Content="CLEAR" Click="BTN_clear_Click" FontSize="19" />
+        <Button Grid.Row="4" Grid.Column="4" Grid.ColumnSpan="6" Name="BTN_clear" Background="Red" Foreground="White" Content="CLEAR" Click="BTN_clear_Click" FontSize="19" />
         <Button Grid.Row="4" Grid.Column="0" Name="BTN_virg" Style="{StaticResource BlackandBlue}" Content="," Click="BTN_virg_Click" />
         <Button Grid.Row="4" Grid.Column="2" Name="BTN_egal" Style="{StaticResource BlackandBlue}" Content="=" Click="BTN_egal_Click" />
         <Button Grid.Row="4" Grid.Column="3" Name="BTN_division" Style="{StaticResource BlackandBlue}" Content="/" Click="BTN_division_Click" />
